@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/UserName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_weight="55"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="15"
+        android:padding="10dp"
+        android:id="@+id/VoiceCall"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/VideoCall"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_video_call_24"
+        android:layout_weight="15"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="15"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_message_24"
+        android:id="@+id/Message"
+        android:layout_height="50dp"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.webrtc.SurfaceViewRenderer
+        android:layout_width="match_parent"
+        android:id="@+id/Remote_video"
+        android:layout_weight="50"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="CALL"
+            android:id="@+id/callButton"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/connState"
+            android:textColor="@color/purple_700"
+            android:layout_toRightOf="@id/callButton"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <org.webrtc.SurfaceViewRenderer
+        android:layout_width="match_parent"
+        android:layout_weight="50"
+        android:id="@+id/Local_video"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
